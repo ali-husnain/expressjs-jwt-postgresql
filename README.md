@@ -4,31 +4,31 @@
 
 Let me explain it briefly.
 ```
-###config
+Config
 
 configure PostgreSQL database & Sequelize
 configure Auth Key
 ````
 ```
-#routes
+Routes
 
 auth.routes.js: POST signup & signin
 user.routes.js: GET public & protected resources
 ```
 ```
-#middlewares
+Middlewares
 
 verifySignUp.js: check duplicate Username or Email
 authJwt.js: verify Token, check User roles in database
 ```
 ```
-#controllers
+Controllers
 
 auth.controller.js: handle signup & signin actions
 user.controller.js: return public & protected content
 ```
 ```
-#Models for Sequelize Models
+Models for Sequelize Models
 
 user.model.js
 role.model.js
