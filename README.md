@@ -1,9 +1,41 @@
-#Todo Rest Node Api
+#JWT Authentication Using PostgreSql
 
-## What is this?
+## Explanation
 
-This is a proof-of-concept (POC), [RESTful Web Services](https://restfulapi.net/) application built on top of [NodeJS](https://nodejs.org/en/).
+Let me explain it briefly.
+```
+# config
 
+configure PostgreSQL database & Sequelize
+configure Auth Key
+````
+```
+# routes
+
+auth.routes.js: POST signup & signin
+user.routes.js: GET public & protected resources
+```
+```
+# middlewares
+
+verifySignUp.js: check duplicate Username or Email
+authJwt.js: verify Token, check User roles in database
+```
+```
+controllers
+
+auth.controller.js: handle signup & signin actions
+user.controller.js: return public & protected content
+```
+```
+# Models for Sequelize Models
+
+user.model.js
+role.model.js
+```
+```
+server.js: import and initialize neccesary modules and routes, listen for connections.
+```
 ## Get Started
 
 * Install dependencies.
