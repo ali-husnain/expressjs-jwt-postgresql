@@ -4,7 +4,7 @@
 
 Let me explain it briefly.
 ```
-# config
+###config
 
 configure PostgreSQL database & Sequelize
 configure Auth Key
